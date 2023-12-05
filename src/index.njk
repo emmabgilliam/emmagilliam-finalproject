@@ -6,24 +6,29 @@
 
 {% block content %}
 <div class="container">
-  <h1>Main headline here</h1>
   <p>Everything you need to know about one of history's greatest bands, from tour dates, members, and more.</p>
-  <h2>Why isn't this working</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
-  <div class="row">
-    {% for book in library.books %}
-      <div class="col">
-        <img src="img/{{ book.slug }}.jpg" alt="" class="img-fluid">
-        <h3><a href="books/{{ book.slug }}.html">{{ book.title }}</a></h3>
-      </div>
+  <h2>Members<h2>
+    <div class="row">
+      {% for member in members.queen %}
+      <div class="col-sm-6 col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+    </div>
     {% endfor %}
-  </div>
-  <h2>Bookstores loop</h2>
-  <hr>
-  {% for store in bookstores.stores %}
-    <h3><a href="{{ store.url }}" target="_blank">{{ store.name }}</a></h3>
-    <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
+  <h2>Discography</h2>
     <hr>
+    {% for discography in discography.queen %}
+    <div class="carousel-item">
+      <img src="..." alt="...">
+      <div class="carousel-caption d-none d-md-block">
+     <h5>...</h5>
+      <p>...</p>
+    </div>
   {% endfor %}
 </div>
 {% endblock %}
