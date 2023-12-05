@@ -11,7 +11,7 @@
       "template": "bake-book",
       "data": "queen",
       "array": "members",
-      "slug": "first-last",
+      "slug": "slug",
       "path": "members"
     }
   ]

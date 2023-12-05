@@ -1,16 +1,14 @@
-<div id="queenCarousel" class="carousel slide" data-bs-ride="carousel">
-  <!-- Carousel items -->
+<div id="discographyCarousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    {% for item in queenData.items %}
+    {% for title in discography %}
     <div class="carousel-item{% if loop.first %} active{% endif %}">
-      <img src="{{ item.imageUrl }}" class="d-block w-100" alt="{{ item.title }}">
+      <img src="{{ discography.image }}" class="d-block w-100" alt="{{ discography.title }}">
       <div class="carousel-caption d-none d-md-block">
-        <h5>{{ item.title }}</h5>
-        <p>{{ item.description }}</p>
+        <h5>{{ discography.title }}</h5>
+        <p>Released: {{ discography.year }}</p>
       </div>
     </div>
     {% endfor %}
   </div>
-  <!-- Carousel controls -->
-  <!-- ... -->
+  <!-- Carousel controls here -->
 </div>
