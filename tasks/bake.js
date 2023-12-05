@@ -12,7 +12,6 @@ const config = fs.readJsonSync('./project.config.json');
 
 function bake(resolve) {
   const dataDir = 'src/_data/';
-
   // modularize manageEnv from nunjucks.js
   function manageEnv(env) {
     // loop over config vars to add to nunjucks global env
@@ -23,7 +22,7 @@ function bake(resolve) {
         env.addGlobal(k, config[k]);
       }
     }
-
+    console.log('hit 3');
     // loop over the directory of files
     fs.readdir(dataDir, (err, files) => {
       // handle errors
