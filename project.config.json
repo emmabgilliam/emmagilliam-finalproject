@@ -3,15 +3,15 @@
     {
       "fileId": "1snGPwfMhnTbfvuAfX2JugJCyFOnNLSm1w__T2m6a990",
       "type": "sheet",
-      "name": "members"
+      "name": "queen"
     }
   ],
   "to_bake": [
     {
       "template": "bake-book",
-      "data": "members",
+      "data": "queen",
       "array": "members",
-      "slug": "slug",
+      "slug": "first-last",
       "path": "members"
     }
   ]

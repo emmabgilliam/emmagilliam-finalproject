@@ -11,15 +11,10 @@
             Members
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            {% for member in band.members %}
-            <li><a class="dropdown-item" href="{{ relative_path }}members/{{ member.slug}}.html">{{ member.name }}</a></li>
+            {% for members in queen %}
+            <li><a class="dropdown-item" href="{{ relative_path }}queen/{{ member.slug}}.html">{{ member.name }}</a></li>
             {% endfor %}
           </ul>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#" id="navbarLink" aria-expanded="false">
-            Discography
-          </a>
         </li>
       </ul>
     </div>

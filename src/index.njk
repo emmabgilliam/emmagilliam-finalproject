@@ -7,8 +7,8 @@
 {% block content %}
 <div class="container">
   <h1>Main headline here</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in facilisis velit, aliquam congue dui. Mauris id mi quam. Nam enim leo, bibendum vel efficitur id, elementum malesuada est. Pellentesque interdum tempus eros nec iaculis. Quisque ac est dictum, vehicula nulla quis, condimentum dui.</p>
-  <h2>Library books loop</h2>
+  <p>Everything you need to know about one of history's greatest bands, from tour dates, members, and more.</p>
+  <h2>Why isn't this working</h2>
   <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
     {% for book in library.books %}
@@ -26,5 +26,6 @@
     <p>{{ store.address}}, {{ store.city }}, {{ store.state }} {{ store.zip }}</p>
     <hr>
   {% endfor %}
+  {% include "carousel.njk" %}
 </div>
 {% endblock %}

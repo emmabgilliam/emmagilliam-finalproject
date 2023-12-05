@@ -1,0 +1,16 @@
+<div id="queenCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    {% for item in queenData.items %}
+    <div class="carousel-item{% if loop.first %} active{% endif %}">
+      <img src="{{ item.imageUrl }}" class="d-block w-100" alt="{{ item.title }}">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>{{ item.title }}</h5>
+        <p>{{ item.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- Carousel controls -->
+  <!-- ... -->
+</div>
